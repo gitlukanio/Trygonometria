@@ -7,3 +7,11 @@ C:\Users\luczkluk\Documents\Moje\ProjektyVisualStudio\Trygonometria_Solutions\Tr
 C:\Users\luczkluk\Documents\Moje\ProjektyVisualStudio\Trygonometria_Solutions\Trygonometria_Console\obj\Debug\Trygonometria_Console.pdb
 C:\Users\luczkluk\Documents\Moje\ProjektyVisualStudio\Trygonometria_Solutions\Trygonometria_Console\bin\Debug\TrygonometryLibrary.dll
 C:\Users\luczkluk\Documents\Moje\ProjektyVisualStudio\Trygonometria_Solutions\Trygonometria_Console\bin\Debug\TrygonometryLibrary.pdb
+C:\Users\Łukasz\Documents\Projekty Visual Studio\Trygonometria\Trygonometria_Console\bin\Debug\Trygonometria_Console.exe.config
+C:\Users\Łukasz\Documents\Projekty Visual Studio\Trygonometria\Trygonometria_Console\bin\Debug\Trygonometria_Console.exe
+C:\Users\Łukasz\Documents\Projekty Visual Studio\Trygonometria\Trygonometria_Console\bin\Debug\Trygonometria_Console.pdb
+C:\Users\Łukasz\Documents\Projekty Visual Studio\Trygonometria\Trygonometria_Console\bin\Debug\TrygonometryLibrary.dll
+C:\Users\Łukasz\Documents\Projekty Visual Studio\Trygonometria\Trygonometria_Console\bin\Debug\TrygonometryLibrary.pdb
+C:\Users\Łukasz\Documents\Projekty Visual Studio\Trygonometria\Trygonometria_Console\obj\Debug\Trygonometria_Console.csprojResolveAssemblyReference.cache
+C:\Users\Łukasz\Documents\Projekty Visual Studio\Trygonometria\Trygonometria_Console\obj\Debug\Trygonometria_Console.exe
+C:\Users\Łukasz\Documents\Projekty Visual Studio\Trygonometria\Trygonometria_Console\obj\Debug\Trygonometria_Console.pdb

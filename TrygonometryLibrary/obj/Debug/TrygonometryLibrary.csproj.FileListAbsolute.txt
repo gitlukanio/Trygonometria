@@ -4,3 +4,8 @@ C:\Users\luczkluk\Documents\Moje\ProjektyVisualStudio\Trygonometria_Solutions\Tr
 C:\Users\luczkluk\Documents\Moje\ProjektyVisualStudio\Trygonometria_Solutions\TrygonometryLibrary\obj\Debug\TrygonometryLibrary.csproj.CoreCompileInputs.cache
 C:\Users\luczkluk\Documents\Moje\ProjektyVisualStudio\Trygonometria_Solutions\TrygonometryLibrary\obj\Debug\TrygonometryLibrary.dll
 C:\Users\luczkluk\Documents\Moje\ProjektyVisualStudio\Trygonometria_Solutions\TrygonometryLibrary\obj\Debug\TrygonometryLibrary.pdb
+C:\Users\Łukasz\Documents\Projekty Visual Studio\Trygonometria\TrygonometryLibrary\obj\Debug\TrygonometryLibrary.csprojResolveAssemblyReference.cache
+C:\Users\Łukasz\Documents\Projekty Visual Studio\Trygonometria\TrygonometryLibrary\obj\Debug\TrygonometryLibrary.dll
+C:\Users\Łukasz\Documents\Projekty Visual Studio\Trygonometria\TrygonometryLibrary\obj\Debug\TrygonometryLibrary.pdb
+C:\Users\Łukasz\Documents\Projekty Visual Studio\Trygonometria\TrygonometryLibrary\bin\Debug\TrygonometryLibrary.dll
+C:\Users\Łukasz\Documents\Projekty Visual Studio\Trygonometria\TrygonometryLibrary\bin\Debug\TrygonometryLibrary.pdb

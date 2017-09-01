@@ -26,12 +26,6 @@ namespace TrygonometryLibrary
             this.B = b;
         }
 
-        virtual Line()
-        {
-            
-        }
-
-
         public double Get_Y(double x)
         {
             return A * x + B;

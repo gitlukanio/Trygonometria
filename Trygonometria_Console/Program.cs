@@ -71,9 +71,25 @@ namespace Trygonometria_Console
             Console.WriteLine("Punkt1 = {0}, Punkt2 = {1}", p1.ToString(), p2.ToString());
             Console.WriteLine("Odległość = {0}\n\n", Point.DistanceBetweenTwoPoints(p1, p2));
 
+            Console.WriteLine("\n\n=================================================================");
+            Console.WriteLine("Teraz trójkąt");
+            Point tra = new Point(1, 1);
+            Point trb = new Point(2, 2.5);
+            Point trc = new Point(4, 1);
+            Triangle tr = new Triangle(tra, trb, trc);
 
+            Console.WriteLine("Obwód trójkąta: {0}", tr.GetCircumference());
+            Console.WriteLine("Pole trójkąta: {0}\n\n", tr.GetArea());
+            //onsole.WriteLine("CB:{0}", tr.SectorBC.Line.ToString());
 
-
+            Console.WriteLine(tr.ToString());
+            
+            
+            
+            
+            
+            
+            
             //Console.ReadKey();
 
         }
