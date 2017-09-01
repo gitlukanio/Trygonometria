@@ -1,23 +1,32 @@
 ﻿namespace TrygonometryLibrary
 {
-    public class Sector : Line
+    public class Sector
     {
-        private Point _StartPoint;
-        public Point StartPoint
+        public Point StartPoint { get; }
+
+        public Point EndPoint { get; }
+
+        public Line Line
         {
-            get { return _StartPoint; }
-            //set { _StartPoint = value; }
+            get
+            {
+                return new Line(StartPoint, EndPoint);
+            }
         }
 
-        private Point _EndPoint;
-        public Point EndPoint
+        public double Lenght
         {
-            get { return _EndPoint; }
-            //set { _EndPoint = value; }
+            get
+            {
+                return Point.DistanceBetweenTwoPoints(StartPoint, EndPoint);
+            }
         }
 
-
-
+        public Sector(Point p1, Point p2)
+        {
+            this.StartPoint = p1;
+            this.EndPoint = p2;
+        }
 
 
 
