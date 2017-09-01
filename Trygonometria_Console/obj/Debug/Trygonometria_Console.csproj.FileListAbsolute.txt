@@ -1,0 +1,9 @@
+C:\Users\luczkluk\Documents\Moje\ProjektyVisualStudio\Trygonometria_Solutions\Trygonometria_Console\bin\Debug\Trygonometria_Console.exe.config
+C:\Users\luczkluk\Documents\Moje\ProjektyVisualStudio\Trygonometria_Solutions\Trygonometria_Console\bin\Debug\Trygonometria_Console.exe
+C:\Users\luczkluk\Documents\Moje\ProjektyVisualStudio\Trygonometria_Solutions\Trygonometria_Console\bin\Debug\Trygonometria_Console.pdb
+C:\Users\luczkluk\Documents\Moje\ProjektyVisualStudio\Trygonometria_Solutions\Trygonometria_Console\obj\Debug\Trygonometria_Console.csprojResolveAssemblyReference.cache
+C:\Users\luczkluk\Documents\Moje\ProjektyVisualStudio\Trygonometria_Solutions\Trygonometria_Console\obj\Debug\Trygonometria_Console.csproj.CoreCompileInputs.cache
+C:\Users\luczkluk\Documents\Moje\ProjektyVisualStudio\Trygonometria_Solutions\Trygonometria_Console\obj\Debug\Trygonometria_Console.exe
+C:\Users\luczkluk\Documents\Moje\ProjektyVisualStudio\Trygonometria_Solutions\Trygonometria_Console\obj\Debug\Trygonometria_Console.pdb
+C:\Users\luczkluk\Documents\Moje\ProjektyVisualStudio\Trygonometria_Solutions\Trygonometria_Console\bin\Debug\TrygonometryLibrary.dll
+C:\Users\luczkluk\Documents\Moje\ProjektyVisualStudio\Trygonometria_Solutions\Trygonometria_Console\bin\Debug\TrygonometryLibrary.pdb
