@@ -83,13 +83,15 @@ namespace Trygonometria_Console
             //onsole.WriteLine("CB:{0}", tr.SectorBC.Line.ToString());
 
             Console.WriteLine(tr.ToString());
-            
-            
-            
-            
-            
-            
-            
+
+            Console.WriteLine("\n\n=================================================================");
+            Console.WriteLine("Teraz koło");
+            Circle k = new Circle(tra, 2);
+
+            Console.WriteLine(k.ToString());
+
+
+
             //Console.ReadKey();
 
         }

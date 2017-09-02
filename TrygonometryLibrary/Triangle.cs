@@ -41,7 +41,7 @@ namespace TrygonometryLibrary
         {
             return "Trójkąt - A(" + A.ToString() + "), B(" + B.ToString() + "), C(" + C.ToString() + ")\n" +
                    "AB:(" + SectorAB.ToString() + ")\n" +
-                   "AC:("+SectorAC.ToString()+")\n" +
+                   "AC:("+SectorAC().ToString()+")\n" +
                    "CB:("+SectorBC.ToString()+")\n" +
                    "Pole:("+this.GetArea()+"), " + 
                    "Obwód:("+this.GetCircumference()+")";
@@ -51,7 +51,7 @@ namespace TrygonometryLibrary
 
         public double GetCircumference()
         {
-            return SectorAB.Lenght + SectorBC.Lenght + SectorAC.Lenght;
+            return SectorAB.Lenght + SectorBC.Lenght + SectorAC().Lenght;
         }
 
         public double GetArea()
