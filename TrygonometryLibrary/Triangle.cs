@@ -59,6 +59,7 @@ namespace TrygonometryLibrary
             Line hLine = Line.GetPerpendicularLine(SectorBC.Line, A);
             Point hPoint = Line.PointOfIntersect(SectorBC.Line, hLine);
             return 0.5 * SectorBC.Lenght * Point.DistanceBetweenTwoPoints(A, hPoint);
+
         }
     }
 }
