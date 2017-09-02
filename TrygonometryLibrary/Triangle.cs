@@ -9,12 +9,26 @@ namespace TrygonometryLibrary
         public Point B { get; }
 
         public Point C { get; }
+        //=======================================================
+        //1
+        public Sector SectorAB
+        {
+            get
+            {
+                return new Sector(A, B);
+            }
+        }
 
-        public Sector SectorAB => new Sector(A, B);
+        //2
+        public Sector SectorAC()
+        {
+            return new Sector(A, C);
+        }
 
-        public Sector SectorAC => new Sector(A, C);
-
+        //3
         public Sector SectorBC => new Sector(B, C);
+        //========================================================
+
 
         public Triangle(Point a, Point b, Point c)
         {
@@ -43,9 +57,7 @@ namespace TrygonometryLibrary
         public double GetArea()
         {
             Line hLine = Line.GetPerpendicularLine(SectorBC.Line, A);
-            //Console.WriteLine("hline:{0}", hLine.ToString());
             Point hPoint = Line.PointOfIntersect(SectorBC.Line, hLine);
-            //Console.WriteLine("hPoint:{0}", hPoint.ToString());
             return 0.5 * SectorBC.Lenght * Point.DistanceBetweenTwoPoints(A, hPoint);
         }
     }
