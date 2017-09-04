@@ -93,7 +93,10 @@ namespace TrygonometryLibrary
             return 2 * this.GetArea() / (SectorAC.Lenght + SectorAB.Lenght + SectorBC.Lenght);
         }
 
-
+        public double PromienOkreguOpisanego()
+        {
+            return SectorAB.Lenght * SectorAC.Lenght * SectorBC.Lenght / 4 * this.PromienOkreguWpisanego()* (GetCircumference()/2);
+        }
 
 
     }

@@ -8,11 +8,25 @@ namespace TrygonometryLibrary
         
         public double A { get; }
         public double B { get; }
+        private bool CzyPionowa { get; }
+        private bool CzyPozioma { get; }
+        private double Y { get; }
+        private double X { get; }
 
         public Line(Point p1, Point p2)
         {
             this.A = (p2.Y - p1.Y)/(p2.X - p1.X);
             this.B = p1.Y - A * p1.X;
+            if (p1.X == p2.X)
+            {
+                CzyPionowa = true;
+                X = p1.X;
+            }
+            if (p1.Y == p2.Y)
+            {
+                CzyPozioma = true;
+                Y = p1.Y;
+            }
         }
 
         /// <summary>
@@ -28,12 +42,28 @@ namespace TrygonometryLibrary
 
         public double Get_Y(double x)
         {
-            return A * x + B;
+            if (CzyPozioma)
+            {
+                return Y;
+            }
+            else
+            {
+                return A * x + B;
+            }
+            
         }
 
         public double Get_X(double y)
         {
-            return (y - B) / A;
+            if (CzyPionowa)
+            {
+                return X;
+            }
+            else
+            {
+                return (y - B) / A;
+            }
+            
         }
 
         public bool IfPointBelongToLine(Point p)

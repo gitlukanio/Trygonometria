@@ -37,8 +37,8 @@ namespace Trygonometria_Console
 
             Point paaaaa = Line.PointOfIntersect(LPC, LPB);
             Console.WriteLine("Punkt PAAAA{0}", paaaaa.ToString());
-
-            
+            Console.WriteLine("Promien opisanego na : {0}", tr.PromienOkreguOpisanego());
+            Console.WriteLine("Point of gravity: {0}", tr.GetCenterOfGravity());
 
             
 
