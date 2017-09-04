@@ -90,6 +90,18 @@ namespace Trygonometria_Console
 
             Console.WriteLine(k.ToString());
 
+            Console.WriteLine("\n\n=================================================================");
+            Console.WriteLine("Test");
+
+            Sector s = new Sector(new Point(3,4), new Point(7,1) );
+
+            Console.WriteLine("Sektor długość: {0}", s.Lenght);
+
+
+
+
+
+
 
 
             //Console.ReadKey();
