@@ -2,7 +2,7 @@
 
 namespace TrygonometryLibrary
 {
-    public class Triangle
+    public class Triangle : IFigure
     {
         public Point A { get; }
 

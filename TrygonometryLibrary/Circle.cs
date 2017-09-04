@@ -2,7 +2,7 @@
 
 namespace TrygonometryLibrary
 {
-    public class Circle
+    public class Circle : IFigure
     {
         public Point MidPoint { get; }
 
@@ -14,7 +14,7 @@ namespace TrygonometryLibrary
 
         public override string ToString()
         {
-            return "Koło:( MidPoint("+MidPoint.ToString()+"), Radius:("+R+"))";
+            return "Koło:( MidPoint(" + MidPoint.ToString() + "), Radius:(" + R + "))";
         }
 
         public Circle(Point p1, double r)

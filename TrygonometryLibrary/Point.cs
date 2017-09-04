@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace TrygonometryLibrary
 {
-    public class Point
+    public class Point : IFigure
     {
         public double X { get; set; }
         public double Y { get; set; }

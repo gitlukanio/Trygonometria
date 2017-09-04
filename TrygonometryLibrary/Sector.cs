@@ -1,6 +1,6 @@
 ﻿namespace TrygonometryLibrary
 {
-    public class Sector
+    public class Sector: IFigure
     {
         public Point StartPoint { get; }
 

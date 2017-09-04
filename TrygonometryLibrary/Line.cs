@@ -3,7 +3,7 @@ using System.Security.Policy;
 
 namespace TrygonometryLibrary
 {
-    public class Line
+    public class Line : IFigure
     {
         
         public double A { get; }
