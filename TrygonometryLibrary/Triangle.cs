@@ -18,16 +18,11 @@ namespace TrygonometryLibrary
         //        return new Sector(A, B);
         //    }
         //}
-
-
-
-
         ////2
         //public Sector SectorAC()
         //{
         //    return new Sector(A, C);
         //}
-
         ////3
         //public Sector SectorBC => new Sector(B, C);
         ////========================================================
@@ -48,12 +43,11 @@ namespace TrygonometryLibrary
         {
             return "Trójkąt - A(" + A.ToString() + "), B(" + B.ToString() + "), C(" + C.ToString() + ")\n" +
                    "AB:(" + SectorAB.ToString() + ")\n" +
-                   "AC:("+SectorAC.ToString()+")\n" +
-                   "CB:("+SectorBC.ToString()+")\n" +
-                   "Pole:("+this.GetArea()+"), " + 
-                   "Obwód:("+this.GetCircumference()+")";
+                   "AC:(" + SectorAC.ToString() + ")\n" +
+                   "CB:(" + SectorBC.ToString() + ")\n" +
+                   "Pole:(" + this.GetArea() + "), " + 
+                   "Obwód:(" + this.GetCircumference() + ")";
         }
-
 
         public double GetCircumference()
         {
@@ -88,7 +82,6 @@ namespace TrygonometryLibrary
             {
                 return false;
             }
-            
         }
 
         public double PromienOkreguWpisanego()

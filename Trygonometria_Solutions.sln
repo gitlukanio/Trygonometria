@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TrygonometryLibrary", "Tryg
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Trygonometria_WFA", "Trygonometria_WFA\Trygonometria_WFA.csproj", "{DB2EEAD4-C8DB-40FB-B149-B260E7CB11C5}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnitTestsTrygonometria", "UnitTestsTrygonometria\UnitTestsTrygonometria.csproj", "{A874676D-9E05-455E-BAC7-32FFFAC39B1B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{DB2EEAD4-C8DB-40FB-B149-B260E7CB11C5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DB2EEAD4-C8DB-40FB-B149-B260E7CB11C5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DB2EEAD4-C8DB-40FB-B149-B260E7CB11C5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A874676D-9E05-455E-BAC7-32FFFAC39B1B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A874676D-9E05-455E-BAC7-32FFFAC39B1B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A874676D-9E05-455E-BAC7-32FFFAC39B1B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A874676D-9E05-455E-BAC7-32FFFAC39B1B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
