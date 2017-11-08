@@ -12,10 +12,10 @@ namespace PlanimetryConsole
         static void Main(string[] args)
         {
             Console.WriteLine("Sprawdzamy trójkąt:");
-            Triangle trojkat = new Triangle(new Point(3,1), new Point(6,8), new Point(7,1));
+            Triangle trojkat = new Triangle(new Point(3, 1), new Point(3, 4), new Point(7, 1));
             Console.WriteLine(trojkat.ToString());
             Console.WriteLine("====================================================");
-            
+
 
         }
     }
