@@ -11,6 +11,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Trygonometria_WFA", "Trygon
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnitTestsTrygonometria", "UnitTestsTrygonometria\UnitTestsTrygonometria.csproj", "{A874676D-9E05-455E-BAC7-32FFFAC39B1B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PlanimetryLibrary", "PlanimetryLibrary\PlanimetryLibrary.csproj", "{4FF00821-7E67-4DCE-902E-05BD4E1A79B2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PlanimetryConsole", "PlanimetryConsole\PlanimetryConsole.csproj", "{5026CE31-4944-4241-828B-A84F0E9CD994}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +37,14 @@ Global
 		{A874676D-9E05-455E-BAC7-32FFFAC39B1B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A874676D-9E05-455E-BAC7-32FFFAC39B1B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A874676D-9E05-455E-BAC7-32FFFAC39B1B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4FF00821-7E67-4DCE-902E-05BD4E1A79B2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4FF00821-7E67-4DCE-902E-05BD4E1A79B2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4FF00821-7E67-4DCE-902E-05BD4E1A79B2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4FF00821-7E67-4DCE-902E-05BD4E1A79B2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5026CE31-4944-4241-828B-A84F0E9CD994}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5026CE31-4944-4241-828B-A84F0E9CD994}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5026CE31-4944-4241-828B-A84F0E9CD994}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5026CE31-4944-4241-828B-A84F0E9CD994}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
