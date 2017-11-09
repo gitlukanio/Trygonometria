@@ -26,14 +26,14 @@ namespace PlanimetryLibrary
         private double Length_aa => Math.Pow(LengthBC_a, 2f);
         private double Length_bb => Math.Pow(LengthCA_b, 2f);
         private double Length_cc => Math.Pow(LengthAB_c, 2f);
-        
+
         /// <summary>
         /// Kąty zawarte w trójkącie
         /// </summary>
-        public double AngleAlfa => (Math.Acos((Length_bb + Length_cc - Length_aa)/(2*LengthCA_b*LengthAB_c))) * 180 / Math.PI;
-        public double AngleBeta => (Math.Acos((Length_aa + Length_cc - Length_bb)/(2*LengthBC_a*LengthAB_c))) * 180 / Math.PI;
-        public double AngleGamma => (Math.Acos((Length_aa + Length_bb - Length_cc)/(2*LengthBC_a*LengthCA_b))) * 180 / Math.PI;
-        
+        public double AngleAlfa => (Math.Acos((Length_bb + Length_cc - Length_aa) / (2 * LengthCA_b * LengthAB_c))) * 180 / Math.PI;
+        public double AngleBeta => (Math.Acos((Length_aa + Length_cc - Length_bb) / (2 * LengthBC_a * LengthAB_c))) * 180 / Math.PI;
+        public double AngleGamma => (Math.Acos((Length_aa + Length_bb - Length_cc) / (2 * LengthBC_a * LengthCA_b))) * 180 / Math.PI;
+
         /// <summary>
         /// Obwód trójkąta
         /// </summary>
@@ -47,7 +47,7 @@ namespace PlanimetryLibrary
         /// <summary>
         /// Powierzchnia trójkąta
         /// </summary>
-        public double Area => Math.Sqrt(p * (p-LengthAB_c) * (p-LengthBC_a) * (p-LengthCA_b) * 1f );
+        public double Area => Math.Sqrt(p * (p - LengthAB_c) * (p - LengthBC_a) * (p - LengthCA_b) * 1f);
 
         /// <summary>
         /// Promień okręgu wpisanego w trójkąt
@@ -63,7 +63,7 @@ namespace PlanimetryLibrary
         /// Czy trójkąt jest prostokątny
         /// </summary>
         public bool IsRectangular { get; }
-        
+
         /// <summary>
         /// Konstruktor podstawowy
         /// </summary>
@@ -79,6 +79,18 @@ namespace PlanimetryLibrary
             if (Math.Abs(AngleAlfa - 90) < tolerance || Math.Abs(AngleBeta - 90) < tolerance || Math.Abs(AngleGamma - 90) < tolerance)
                 IsRectangular = true;
         }
+
+        /// <summary>
+        /// Zwraca punkt ciężkości trójkąta.
+        /// </summary>
+        /// <returns></returns>
+        public Point GetCentroid()
+        {
+            var x = (a.x + b.x + c.x) / 3f;
+            var y = (a.y + b.y + c.y) / 3f;
+            return new Point(x, y);
+        }
+
 
 
         /// <summary>

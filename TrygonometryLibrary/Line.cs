@@ -5,7 +5,7 @@ namespace TrygonometryLibrary
 {
     public class Line : IFigure
     {
-        
+
         public double A { get; }
         public double B { get; }
         private bool CzyPionowa { get; }
@@ -15,7 +15,7 @@ namespace TrygonometryLibrary
 
         public Line(Point p1, Point p2)
         {
-            this.A = (p2.Y - p1.Y)/(p2.X - p1.X);
+            this.A = (p2.Y - p1.Y) / (p2.X - p1.X);
             this.B = p1.Y - A * p1.X;
             if (p1.X == p2.X)
             {
@@ -50,7 +50,7 @@ namespace TrygonometryLibrary
             {
                 return A * x + B;
             }
-            
+
         }
 
         public double Get_X(double y)
@@ -63,7 +63,7 @@ namespace TrygonometryLibrary
             {
                 return (y - B) / A;
             }
-            
+
         }
 
         public bool IfPointBelongToLine(Point p)
@@ -101,7 +101,7 @@ namespace TrygonometryLibrary
                 double y = l1.A * x + l1.B;
                 return new Point(x, y);
             }
-            
+
         }
 
         public static Line GetPerpendicularLine(Line l1, Point p1) // zwraca linie prostopadłą przechodzącą przez punkt p1.

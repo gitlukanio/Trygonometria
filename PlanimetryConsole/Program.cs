@@ -11,10 +11,14 @@ namespace PlanimetryConsole
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Sprawdzamy trójkąt:");
-            Triangle trojkat = new Triangle(new Point(3, 1), new Point(3, 4), new Point(7, 1));
-            Console.WriteLine(trojkat.ToString());
-            Console.WriteLine("====================================================");
+            Line3 l1 = new Line3(new Point(3, 1), new Point(3, 4));
+            Console.WriteLine("\nLine pionowa:\n{0}", l1.ToString());
+            Console.WriteLine("=============================\n");
+
+            Line3 l2 = new Line3(new Point(1, 3), new Point(4, 3));
+            Console.WriteLine("\nLine pozioma:\n{0}", l2.ToString());
+
+
 
 
         }

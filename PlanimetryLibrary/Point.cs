@@ -18,5 +18,11 @@ namespace PlanimetryLibrary
         {
             return Math.Sqrt(Math.Pow(p2.x - p1.x, 2) + Math.Pow(p2.y - p1.y, 2));
         }
+
+        public override string ToString()
+        {
+            return $"X={x} Y={y}";
+
+        }
     }
 }
