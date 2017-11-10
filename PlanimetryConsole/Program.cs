@@ -17,8 +17,24 @@ namespace PlanimetryConsole
 
             Line3 l2 = new Line3(new Point(1, 3), new Point(4, 3));
             Console.WriteLine("\nLine pozioma:\n{0}", l2.ToString());
+            Console.WriteLine("=============================\n");
 
+            Console.WriteLine(" sprawdzamy punkty");
 
+            Line3 l3 = new Line3(new Point(1, 1), new Point(3, 3));
+            Line3 l4 = new Line3(new Point(3, 3), new Point(5, 1));
+
+            Point intersectPoint = Line3.PointOfIntersect(l3, l4);
+
+            if (intersectPoint != null)
+            {
+                Console.WriteLine(intersectPoint.ToString());
+
+            }
+            else
+            {
+                Console.WriteLine("Nie ma punktu!!!!");
+            }
 
 
         }
