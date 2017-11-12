@@ -43,39 +43,25 @@ namespace TrygonometryLibrary
         public double Get_Y(double x)
         {
             if (CzyPozioma)
-            {
                 return Y;
-            }
             else
-            {
                 return A * x + B;
-            }
-
         }
 
         public double Get_X(double y)
         {
             if (CzyPionowa)
-            {
                 return X;
-            }
             else
-            {
                 return (y - B) / A;
-            }
-
         }
 
         public bool IfPointBelongToLine(Point p)
         {
             if (p.Y == A * p.X + B)
-            {
                 return true;
-            }
             else
-            {
                 return false;
-            }
         }
 
         public override string ToString()
@@ -92,16 +78,13 @@ namespace TrygonometryLibrary
         public static Point PointOfIntersect(Line l1, Line l2)
         {
             if (l1.A == l2.A)
-            {
                 return null; // Linie są do siebie równoległe lub sa takie same.
-            }
             else
             {
-                double x = (l2.B - l1.B) / (l1.A - l2.A);
-                double y = l1.A * x + l1.B;
+                var x = (l2.B - l1.B) / (l1.A - l2.A);
+                var y = l1.A * x + l1.B;
                 return new Point(x, y);
             }
-
         }
 
         public static Line GetPerpendicularLine(Line l1, Point p1) // zwraca linie prostopadłą przechodzącą przez punkt p1.

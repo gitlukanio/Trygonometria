@@ -21,8 +21,8 @@ namespace PlanimetryLibrary
             // postać ogólna równania prostej przechodzącej przez dwa punkty
             this.A = p1.y - p2.y;
             this.B = p2.x - p1.x;
-            this.C = (p1.x - p2.x) * p1.y + (p2.y - p1.y) * p1.x;
-            this.C2 = p1.x * p2.y - p2.x * p1.y;
+            //this.C = (p1.x - p2.x) * p1.y + (p2.y - p1.y) * p1.x;
+            this.C = p1.x * p2.y - p2.x * p1.y;
 
             PA = p1;
             PB = p2;
@@ -31,15 +31,35 @@ namespace PlanimetryLibrary
 
         }
 
-        public double GetY(double x)
+        public static Point PointOfIntersect(Line3 l1, Line3 l2)
         {
+            if (l1.A * l2.B != l2.A * l1.B)
+            {
+                var x = (l1.B * l2.C - l2.B * l1.C) / (l1.B * l2.A - l2.B * l1.A);
+                var y = (l1.A * l2.C - l2.A * l1.C) / (l1.A * l2.B - l2.A * l1.B);
+                return new Point((float)x, (float)y);
+
+            }
+            else
+            {
+                // Brak punktu przecięcia. Linie są równoległe lub takie same.
+                return null;
+            }
+
+
 
         }
 
-        public double GetX(double y)
-        {
 
-        }
+        //public double GetY(double x)
+        //{
+
+        //}
+
+        //public double GetX(double y)
+        //{
+
+        //}
 
 
         public override string ToString()
