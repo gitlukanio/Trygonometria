@@ -11,29 +11,66 @@ namespace PlanimetryConsole
     {
         static void Main(string[] args)
         {
-            Line3 l1 = new Line3(new Point(3, 1), new Point(3, 4));
-            Console.WriteLine("\nLine pionowa:\n{0}", l1.ToString());
-            Console.WriteLine("=============================\n");
+            Line l1 = new Line(new Point(-7, 3), new Point(9, 3));
+            Line l2 = new Line(new Point(-5, 5), new Point(5, -5));
+            Line l3 = new Line(new Point(-6, -2), new Point(7, -2));
+            Line l4 = new Line(new Point(3, -7), new Point(3, 6));
+            Line l5 = new Line(new Point(-1, -6), new Point(-1, 4));
+            Line l6 = new Line(new Point(-4, -4), new Point(5, 5));
 
-            Line3 l2 = new Line3(new Point(1, 3), new Point(4, 3));
-            Console.WriteLine("\nLine pozioma:\n{0}", l2.ToString());
-            Console.WriteLine("=============================\n");
+            List<Line> listaLini = new List<Line>();
 
-            Console.WriteLine(" sprawdzamy punkty");
+            listaLini.Add(l1);
+            listaLini.Add(l2);
+            listaLini.Add(l3);
+            listaLini.Add(l4);
+            listaLini.Add(l5);
+            listaLini.Add(l6);
 
-            Line3 l3 = new Line3(new Point(1, 1), new Point(3, 3));
-            Line3 l4 = new Line3(new Point(3, 3), new Point(5, 1));
+            //Sprawdzamy(listaLini);
 
-            Point intersectPoint = Line3.PointOfIntersect(l3, l4);
+            Triangle tr = new Triangle(new Point(3, 1), new Point(7, 1), new Point(3, 4));
 
-            if (intersectPoint != null)
+            Console.WriteLine(tr.ToString());
+
+            List<Point> punkty = new List<Point>()
             {
-                Console.WriteLine(intersectPoint.ToString());
+                new Point(6,3),
+                new Point(4,5),
+                new Point(1,6),
+                new Point(-1,6),
+                new Point(-5,5),
+                new Point(-6,2),
+                new Point(-6,-1),
+                new Point(-5,-4),
+                new Point(-3,-6),
+                new Point(-1,-7),
+                new Point(1,-7),
+                new Point(3, -6),
+                new Point(5,-4),
+                new Point(7,-2)
+            };
 
-            }
-            else
+            SprawdzamyTrojkaty(punkty);
+
+
+        }
+
+        private static void SprawdzamyTrojkaty(List<Point> punkty)
+        {
+            Console.WriteLine("Sprawdzamy trójkąty:");
+
+            foreach (var point in punkty)
             {
-                Console.WriteLine("Nie ma punktu!!!!");
+                Triangle tr = new Triangle(new Point(1, 1), new Point(7, 1), point);
+
+                Console.WriteLine(
+                    "Trójkąt {0} Suma kątów {1} Powierzchnia {2}",
+                    point.ToString(),
+                    tr.AngleAlfa + tr.AngleBeta + tr.AngleGamma,
+                    tr.Area);
+
+
             }
 
 
