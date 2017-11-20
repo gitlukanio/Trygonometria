@@ -53,7 +53,6 @@ namespace PlanimetryConsole
 
             SprawdzamyTrojkaty(punkty);
 
-
         }
 
         private static void SprawdzamyTrojkaty(List<Point> punkty)
